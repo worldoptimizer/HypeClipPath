@@ -1,7 +1,6 @@
 # HypeClipPath
 ![](https://forums.tumult.com/uploads/db2156/original/3X/2/a/2a97365453b5d974fecffc2ca70ff14cf37dcf93.png)
-This extension aims at offering clipPath support for vector shapes, as long as this isn't supported native.
-Waiting for it to be implemented by Tumult, in addition to my urge to rewrite the code base one day, lead to me never uploaded this extension to GitHub. As people are actively using it nowadays, and it is beneficial to have a CDN and version control, I uploaded it now to GitHub to keep track of the small bug maintenance bug fixes I apply over time. For now, that is all I am planing for this repository, so there is no roadmap or further development planed.
+Waiting for Tumult to implement it and my desire to rewrite the codebase one day led me to never upload this extension to GitHub. As interest in the extension grew, I uploaded it now to GitHub to benefit form version control. This way I can keep track and maintain bug fixes and offer a CDN. That's all folks! You can't expect more than that. There is no roadmap or future development planned for this repository.
 
 Content Delivery Network (CDN)
 --
