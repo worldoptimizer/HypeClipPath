@@ -1,5 +1,5 @@
 /*!
-Hype ClipPath 1.7.2
+Hype ClipPath 1.7.3
 copyright (c) 2021 Max Ziebell, (https://maxziebell.de). MIT-license
 */
 
@@ -16,6 +16,7 @@ copyright (c) 2021 Max Ziebell, (https://maxziebell.de). MIT-license
 * 1.7 Using Mutation Observer (not only IDE), debouncing and performance update
 * 1.7.1 fixed Safari update bug
 * 1.7.2 fixed querySelector bug (thanks to michelangelo)
+* 1.7.3 fixed typo on tickRunning to _tickRunning
 */
 
 if("HypeClipPath" in window === false) window['HypeClipPath'] = (function () {
@@ -436,12 +437,12 @@ if("HypeClipPath" in window === false) window['HypeClipPath'] = (function () {
 			} else {
 				var tick = function(){
 					if (!_tickRunning) {
-						tickRunning = true;
+						_tickRunning = true;
 						for (var id in _updatesToRunOnTick) {
 							_updatesToRunOnTick[id]();
 						}
 						_updatesToRunOnTick = {};
-						tickRunning = false;
+						_tickRunning = false;
 					}
 					_tickId = window.requestAnimationFrame(tick);
 				}
@@ -581,7 +582,7 @@ if("HypeClipPath" in window === false) window['HypeClipPath'] = (function () {
 	}
 	/* Reveal Public interface to window['HypeClipPath'] */
 	return {
-		version: '1.7.2',
+		version: '1.7.3',
 		'supportsClipPath': supportsClipPath,
 		'setFramesPerSecond': setFramesPerSecond
 	};
